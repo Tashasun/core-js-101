@@ -514,13 +514,14 @@ function distinct(arr) {
  *    "Poland" => ["Lodz"]
  *   }
  */
-function group(array, keySelector, valueSelector) {
-  return array.reduce((result, currentValue) => {
-    (result[currentValue[keySelector]] = result[currentValue[keySelector]] || []).push(
-      currentValue[valueSelector]
-    );
-    return result;
-  }, []); 
+function group(/* array, keySelector, valueSelector */) {
+  throw new Error('Not implemented');
+  // return array.reduce((result, currentValue) => {
+  //   (result[currentValue[keySelector]] = result[currentValue[keySelector]] || []).push(
+  //     currentValue[valueSelector]
+  //   );
+  //   return result;
+  // }, []);
 }
 
 
